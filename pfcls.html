@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Pierre, Feuille, Ciseaux, Lézard, Spock</title>
+        <link rel="stylesheet" href="style_pfcls.css"/>
+        <h1 class="title">Pierre, Feuille, Ciseaux, Lézard, Spock</h1>
+    </head>
+    <body>
+        <!--boutton pour afficher le debut du jeu-->
+        <button id="myBtn">
+            Règles du jeu
+        </button>
+        <div id="modal">
+            <!-- regle du jeu -->
+            <div id="modal-content">
+                <div id="bouton-fermer">&times;</div>
+                <p id="titre-regles">Toutes les combinaisons permettent de remporter<br>(ou perdre) la
+                    partie</p>
+                <ul id="regles">
+                    <li>Les ciseaux coupent le papier,</li>
+                    <li>le papier bat la pierre,</li>
+                    <li>la pierre écrase le lézard,</li>
+                    <li>le lézard empoisonne Spock,</li>
+                    <li>Spock écrabouille les ciseaux,</li>
+                    <li>les ciseaux décapitent le lézard,</li>
+                    <li>le lézard mange le papier,</li>
+                    <li>le papier repousse Spock,</li>
+                    <li>Spock détruit la pierre,</li>
+                    <li>la pierre bat les ciseaux.</li>
+                </ul>
+                <img class="regleimg" src="img/pfcls.png" alt="Pierre, Feuille, Ciseaux, Lézard, Spock en dessin avec des fleches pour montrer les règles"> 
+            </div>
+        </div>
+        <div id="modal-jeu">
+            <h1>Choisis judicieusement ton jeu!</h1>
+            <section id="allBox">
+                <!-- les possibilitées du jeu du joueur -->
+                <button class="box" id="boxPierre" type="button">
+                    <img src="img/pierre.jpg" alt="main qui fait un signe de pierre" class="pierreimg">
+                    <p>Pierre</p>
+                </button>
+                <button class="box" id="boxFeuille" type="button">
+                    <img src="img/feuille.jpg" alt="main qui fait un signe de feuille" class="feuilleimg">
+                    <p>Feuille</p>
+                </button>
+                <button class="box" id="boxCiseaux" type="button">
+                    <img src="img/ciseaux.jpg" alt="main qui fait un signede ciseaux" class="ciseauximg">
+                    <p>Ciseaux</p>
+                </button>
+                <button class="box" id="boxLezard" type="button">
+                    <img src="img/lezard.jpg" alt="main qui fait un signe de lézard" class="lezardimg">
+                    <p>Lézard</p>
+                </button>
+                <button class="box" id="boxSpock" type="button">
+                    <img src="img/spock.jpg" alt="main qui fait un signe de Spock" class="spockimg">
+                    <p>Spock</p>
+                </button>
+            </section>
+            <div id="choix">
+                <div id="joueur-title"><h1>Choix du joueur</h1></div>
+                <div id="computer-title"><h1>Un adversaire de taille</h1></div>
+            </div>
+            <section id="computer">
+                    <div id="image-options-ordi"></div>
+                    <div id="image-choix-util"></div>
+                    <div id="image-choix-ordi"></div>
+            </section>
+        </div>
+
+        <!--resultat du jeu-->
+        <div id="resultat">
+            <h1>résultat de la partie</h1>
+            <p id="texte-resultat"></p><!--resultat du jeu-->
+            <button class="box" id="rejouer"><p>Rejouer</p></button>
+        </div>
+
+        <script src="script_pfcls.js"></script>
+        
+    </body>
+</html>

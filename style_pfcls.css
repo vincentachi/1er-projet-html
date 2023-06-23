@@ -1,0 +1,285 @@
+@font-face {
+    font-family: 'Exo2';
+    src: url('fonts/Exo2-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Exo2';
+    src: url('fonts/Exo2-VariableFont_wght.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+  font-family: 'Exo2';
+  src: url('fonts/Exo2-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+#allBox {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    font-family: "Exo2";
+}
+
+.box {
+    background: rgba(65, 65, 128);
+    color: rgba(65, 65, 128);
+    font-weight: bold;
+    font-family: "Exo2";
+    border-radius: 50px;
+    cursor: pointer;
+    border-color: #FFF;
+    box-shadow: 5px 5px grey;
+}
+
+.box:hover {
+    transform: scale(125%);
+    color: #FFF;
+    text-shadow: 3px 3px black;
+    transition: .5s;
+    background-color: rgb(110, 110, 167);
+}
+
+span {
+    text-align: center;
+    font-family: "Exo2";
+    color :#FFF;
+    text-shadow: 4px 4px rgba(65, 65, 128);
+}
+
+.pierreimg,
+.feuilleimg, 
+.ciseauximg, 
+.lezardimg, 
+.spockimg{
+    border-radius: 50%;
+}
+
+/* The Modal (background) */
+#modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(74, 76, 97); /* Fallback color */
+    background-color: rgba(66, 125, 165, 0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  #modal-content {
+    background-color: rgb(36, 36, 70);
+    margin: 5% auto; /* 5% from the top and centered */
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    width: 390px;
+    border-radius: 40px; /* Could be more or less, depending on screen size */
+  }
+
+  .regleimg {
+    display: flex;
+    margin: auto;
+  }
+  
+  /* The Close Button */
+  #bouton-fermer {
+    color: rgb(255, 255, 255);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  #bouton-fermer:hover,
+  #bouton-fermer:focus{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #myBtn{
+    display: flex;
+    justify-content: space-around;
+    margin: 15px auto;
+    font-family: "Exo2";
+    border-radius: 15px;
+    border-color: white;
+    background-color:rgba(65, 65, 128);
+    color: #FFF;
+    text-shadow: 3px 3px black;
+    font-size: 1.3em;
+    cursor: pointer;
+    box-shadow: 3px 3px grey;
+  }
+
+  #myBtn:hover{
+    background-color: rgb(110, 110, 167);
+    transform: scale(110%);
+    transition: .5s;
+  }
+
+  #regles > li,
+  #titre-regles{
+    font-family: "Exo2";
+    font-style: italic;
+    color: rgb(255, 254, 254);
+    text-shadow: 4px 4px rgba(65, 65, 128);
+    list-style: auto;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  #gameScore{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+  }
+  
+.plcfsimg{
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  background-color: rgba(65, 65, 128);
+  width: 250px;
+  height: 250px;
+}
+
+.title{
+  text-align: center;
+  font-family: "Exo2";
+  color:#FFF;
+  text-shadow: 5px 5px rgba(65, 65, 128);
+}
+
+#resultat{
+  text-align: center;
+  font-family: "Exo2";
+  color:#FFF;
+  text-shadow: 5px 5px rgba(65, 65, 128);
+}
+
+body{
+  background-image: url(img/backgroundimg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+
+}
+h1,
+#texte-resultat {
+  text-align: center;
+  font-family: "Exo2";
+  color: #FFF;
+  text-shadow: 3px 3px rgba(65, 65, 128);
+}
+#texte-resultat {
+  font-size: 2em;
+  font-style: italic;
+  font-weight: 800;
+}
+
+#joueur-title{
+  display: none;
+}
+
+#image-options-ordi{
+  margin: auto;
+  width: 113px;
+  height: 111px;
+  background-image: url("img/pierre.jpg");
+  background-size: cover;
+  animation: truc 2.5s infinite;
+  border-radius: 50%;
+  box-shadow: 5px 5px grey;
+}
+
+#image-choix-ordi,
+#image-choix-util
+{
+  display: none;
+  margin: auto;
+  width: 113px;
+  height: 111px;
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: 5px 5px grey;
+}
+
+#modal-ordi{
+  display: flex;
+  justify-content: center;
+  animation: alternate 2.5s infinite;
+}
+#modal-ordi .box:hover{
+  transform: none;
+}
+
+#modal-resultat{
+  display: none;
+}
+
+#computer{
+  display: flex;
+  flex: row wrap;
+  justify-content: center;
+}
+
+#rejouer {
+  display: none;
+  margin: 10px auto;
+  color: #FFF;
+  text-shadow: 3px 3px black;
+  font-size: 20px;
+}
+
+#choix {
+ display: flex;
+ flex: wrap;
+ justify-content: space-around;
+}
+
+
+
+
+@keyframes truc {
+  0%{
+    background-image: url("img/pierre.jpg");
+  }
+  20%{
+    background-image: url("img/feuille.jpg");
+  }
+  40%{
+    background-image: url("img/ciseaux.jpg");
+  }
+  60%{
+    background-image: url("img/lezard.jpg");
+  }
+  80%{
+    background-image: url("img/spock.jpg");
+  }
+  100%{
+    background-image: url("img/pierre.jpg");
+  }
+}
+
+@media screen and (max-width: 1128px) {
+  body{
+    background-image: url(img/backgroundlitleimg.jpg);
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  body{
+    background-image: url(img/backgroundportableimg.jpg);
+  }
+}

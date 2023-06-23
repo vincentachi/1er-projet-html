@@ -1,0 +1,16 @@
+{
+  "name": "projetfindeprepa",
+  "version": "1.0.0",
+  "description": "1er projet",
+  "main": "script_pfcls.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "postcss-cli": "^10.1.0"
+  }
+}
